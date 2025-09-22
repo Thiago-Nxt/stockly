@@ -18,10 +18,7 @@ const ProductsPage = async () => {
           </div>
           <CreateProductButton />
         </div>
-        <DataTable
-          columns={productTableColumns}
-          data={JSON.parse(JSON.stringify(products))}
-        />
+        <DataTable columns={productTableColumns} data={products} />
         {/* Direita */}
       </div>
     </>
